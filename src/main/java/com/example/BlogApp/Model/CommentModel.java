@@ -27,4 +27,8 @@ public class CommentModel {
     @JsonBackReference
     private AuthorModel author;
 
+    public CommentModel(String content, AuthorModel author) {
+        this.content = content;
+        this.author = author;
+    }
 }
